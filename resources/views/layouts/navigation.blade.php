@@ -1,4 +1,4 @@
-<nav x-data="{ open: false }" class="sticky top-0 bg-white dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700 z-50">
+<nav x-data="{ open: false }" class="sticky top-0 bg-gray-200 text-black shadow">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
@@ -7,24 +7,30 @@
                 <div class="shrink-0 flex items-center">
                     <img src="{{ asset('img/logo.png') }}" alt="Logo" class="h-10">
                 </div>
-<script src="https://cdn.tailwindcss.com"></script>
+
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link class="text-gray-700 no-underline" :href="route('activities.index')" :active="request()->routeIs('activities')">
-                        {{ __('Escuela Telesecundaria Justo Sierra') }}
+                    <x-nav-link class="text-black font-semibold hover:text-gray-900" :href="route('productos.index')" :active="request()->routeIs('productos.index')">
+                        {{ __('Mascotas Felices') }}
                     </x-nav-link>
-                    <x-nav-link class="text-gray-700 no-underline" :href="route('activities.index')" :active="request()->routeIs('activities.index')">
-                        Actividades
+                    <x-nav-link class="text-black font-semibold hover:text-gray-900" :href="route('productos.index')" :active="request()->routeIs('productos.index')">
+                        Productos
                     </x-nav-link>
-                    <x-nav-link class="text-gray-700 no-underline" :href="route('workshops.index')" :active="request()->routeIs('workshops.index')">
-                        Talleres
+                    <x-nav-link class="text-black font-semibold hover:text-gray-900" :href="route('clientes.index')" :active="request()->routeIs('clientes.index')">
+                        Clientes
                     </x-nav-link>
-                    <x-nav-link class="text-gray-700 no-underline" :href="route('workshops_activities.index')" :active="request()->routeIs('workshops_activities.index')">
-                        Actividades de talleres
+                    <x-nav-link class="text-black font-semibold hover:text-gray-900" :href="route('proveedores.index')" :active="request()->routeIs('proveedores.index')">
+                        Proveedores
                     </x-nav-link>
-
+                    <x-nav-link class="text-black font-semibold hover:text-gray-900" :href="route('pedidos.index')" :active="request()->routeIs('pedidos.index')">
+                        Pedidos
+                    </x-nav-link>
+                    <x-nav-link class="text-black font-semibold hover:text-gray-900" :href="route('ventas.index')" :active="request()->routeIs('ventas.index')">
+                        Ventas
+                    </x-nav-link>
                 </div>
             </div>
+
 
 
             <!-- Settings Dropdown -->

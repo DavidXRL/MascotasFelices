@@ -1,12 +1,11 @@
 
-<footer class="bg-white mt-16 py-10 shadow-inner">
+<footer class="bg-gray-200 py-10 shadow-inner">
     <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
         <!-- Logo y descripción -->
         <div class="flex flex-col items-center md:items-start">
             <img src="{{ asset('img/logo.png') }}" alt="Logo" class="h-16 w-16 mb-3 object-contain">
-            <p class="text-gray-700 text-center md:text-left text-sm">
-                Escuela Telesecundaria Justo Sierra<br>
-                Comprometidos con la excelencia educativa y el desarrollo integral de nuestros estudiantes.
+            Mascotas Felices: productos de calidad para el cuidado, alimentación y diversión de tus mascotas.<br>
+
             </p>
         </div>
         <!-- Enlaces rápidos -->
@@ -15,9 +14,7 @@
             <ul class="space-y-2 text-gray-700 text-sm">
                 <li><a href="{{ url('/') }}" class="hover:text-gray-800 transition">Inicio</a></li>
                 <li><a href="{{ url('/about_us') }}" class="hover:text-gray-800 transition">Sobre nosotros</a></li>
-                <li><a href="{{ url('/workshop') }}" class="hover:text-gray-800 transition">Talleres</a></li>
-                <li><a href="{{ url('/activities_esc') }}" class="hover:text-gray-800 transition">Actividades</a></li>
-                <li><a href="{{ url('/workshop_activities') }}" class="hover:text-gray-800 transition">Actividades de taller</a></li>
+
                 <li><a href="{{ url('/#contact-info') }}" class="hover:text-gray-800 transition">Contacto</a></li>
             </ul>
         </div>
@@ -27,8 +24,8 @@
             <h3 class="text-gray-900 font-bold mb-3">Contacto</h3>
 
             <ul class="space-y-2 text-gray-700 text-sm">
-                <li><span class="font-semibold">Teléfono:</span> (766) 845-1494</li>
-                <li><span class="font-semibold">Correo:</span> <a href="30dtv0296r@secundaria.msev.gob.mx" class="hover:text-gray-800">30dtv0296r@secundaria.msev.gob.mx</a></li>
+                <li><span class="font-semibold">Teléfono:</span> (784) 140-6409</li>
+                <li><span class="font-semibold">Correo:</span> <a href="mailto:mascotasfelices@gmail.com" class="hover:text-gray-800">mascotasfelices@gmail.com</a></li>
             </ul>
         </div>
         <!-- Redes sociales -->
@@ -45,7 +42,7 @@
 
     <div class="border-t mt-8 pt-4 text-center text-emerald-800 text-xs">
     <div class="text-gray-500">
-        &copy; {{ date('Y') }} Escuela Telesecundaria Justo Sierra. Todos los derechos reservados. &nbsp;
+        &copy; {{ date('Y') }} Mascotas Felices. Todos los derechos reservados. &nbsp;
         <a href="{{ url('/politicas-privacidad') }}" class="text-emerald-700 hover:underline">
             Políticas de Privacidad
         </a>

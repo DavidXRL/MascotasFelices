@@ -1,11 +1,11 @@
 
 
-<header class="w-full bg-white shadow-md py-4 px-4 md:px-8 flex items-center justify-between flex-wrap" style="position: sticky; top: 0; z-index: 100;">
+<header class="w-full bg-gray-200 shadow-md py-4 px-4 md:px-8 flex items-center justify-between flex-wrap" style="position: sticky; top: 0; z-index: 100;">
     <div class="flex items-center space-x-3">
         <!-- Espacio para imagen -->
         <a href="{{ url('/') }}">
             <img src="{{ asset('img/logo.png') }}" alt="Logo" class="h-12 w-12 md:h-10 md:w-10 object-contain" />
-        </a>  <span class="text-base sm:text-lg md:text-xl font-bold text-gray-800">Escuela Telesecundaria Justo Sierra</span>
+        </a>  <span class="text-base sm:text-lg md:text-xl font-bold text-gray-800">Mascotas Felices</span>
     </div>
     <button id="menu-toggle" class="md:hidden text-indigo-950 focus:outline-none ml-2" aria-label="Abrir menú">
         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -16,12 +16,14 @@
     <nav id="nav-menu" class="w-full md:w-auto space-y-2 md:space-y-0 md:space-x-6 mt-4 md:mt-0 hidden md:block">
         <a href="{{ url('/') }}" class="block md:inline text-gray-900 text-sm md:text-base transition hover:text-gray-500 font-semibold">Inicio</a>
         <a href="{{ url('/about_us') }}" class="block md:inline text-gray-900 text-sm md:text-base transition hover:text-gray-500 font-semibold">Sobre nosotros</a>
-        <a href="{{ url('/activities_esc') }}" class="block md:inline text-gray-900 text-sm md:text-base transition hover:text-gray-500 font-semibold">Actividades</a>
-        <a href="{{ url('/workshop') }}" class="block md:inline text-gray-900 text-sm md:text-base transition hover:text-gray-500 font-semibold">Talleres</a>
         <a href="{{ url('/#contact-info') }}" class="block md:inline text-gray-900 text-sm md:text-base transition hover:text-gray-500 font-semibold">Contacto</a>
         <a href="{{ url('/login') }}" class="block md:inline text-gray-900 text-sm md:text-base transition hover:text-gray-500 font-semibold">Iniciar Sesión</a>
     </nav>
 </header>
+
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
 
 <!-- Botón flotante para regresar al inicio -->
 <button id="scrollToTopBtn" class="fixed bottom-6 right-6 z-50 bg-gray-900 text-white rounded-full shadow-lg p-3 hover:bg-gray-700 transition hidden" aria-label="Regresar al inicio">

@@ -7,11 +7,19 @@
                 <div class="shrink-0 flex items-center">
                     <img src="{{ asset('img/logo.png') }}" alt="Logo" class="h-10">
                 </div>
+<!-- Font Awesome 6 Free CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-RXf+QSDCUQs3B7eKkMZQ+5qyz+HKnFF+B0e4eWk0F5W4i9oJlgAcFhEy6FfYfXl8eeI57k5QdGn0gTk0ujZhw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- O si prefieres solo los íconos sólidos -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/solid.min.css" /> -->
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link class="text-black font-semibold hover:text-gray-900" :href="route('productos.index')" :active="request()->routeIs('productos.index')">
                         {{ __('Mascotas Felices') }}
+                    </x-nav-link>
+                    <x-nav-link class="text-black font-semibold hover:text-gray-900" :href="route('categorias.index')" :active="request()->routeIs('categorias.index')">
+                        Categorías
                     </x-nav-link>
                     <x-nav-link class="text-black font-semibold hover:text-gray-900" :href="route('productos.index')" :active="request()->routeIs('productos.index')">
                         Productos

@@ -25,7 +25,7 @@ class VentaController extends Controller
         return view('admin/ventas/create', compact('clientes','productos'));
     }
 
-    public function store(Request $request)
+     public function store(Request $request)
     {
         $request->validate([
             'cliente_id'=>'required|exists:clientes,id',
@@ -66,6 +66,7 @@ class VentaController extends Controller
             return back()->withErrors(['error'=>$e->getMessage()])->withInput();
         }
     }
+
 
     public function edit(Venta $venta)
     {

@@ -9,7 +9,7 @@ class Producto extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['nombre', 'descripcion', 'precio', 'stock', 'categoria'];
+    protected $fillable = ['nombre', 'descripcion', 'precio', 'stock', 'categoria', 'image_product'];
 
     public function ventas() {
         return $this->belongsToMany(Venta::class, 'producto_venta')

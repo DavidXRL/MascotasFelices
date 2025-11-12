@@ -13,23 +13,49 @@ class ProductoController extends Controller
         return view('/admin/productos/index', compact('productos'));
     }
 
+  public function welcome()
+    {
+        $productos = Producto::where('stock', '>', 0)->get();
+        $ventas = \App\Models\Venta::with('cliente','productos')->latest()->take(5)->get();
+        return view('welcome', compact('productos','ventas'));
+    }
+
     public function create()
     {
-        return view('/admin/productos/create');
+        $productos = Producto::pluck('id', 'nombre');
+        return view('admin/productos/create', compact('productos'));
     }
 
-    public function store(Request $request)
-    {
-        $request->validate([
-            'nombre' => 'required',
-            'precio' => 'required|numeric',
-            'stock' => 'required|integer',
-            'categoria' => 'required'
-        ]);
+public function store(Request $request)
+{
+    // Validar campos
+    $validatedData = $request->validate([
+        'nombre' => 'required|string|max:255',
+        'descripcion' => 'nullable|string',
+        'precio' => 'required|numeric',
+        'stock' => 'required|integer',
+        'categoria' => 'required|string|max:255',
+        'image_product' => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
+    ]);
 
-        Producto::create($request->all());
-        return redirect()->route('productos.index')->with('success', 'Producto creado correctamente.');
+    // Subida de imagen
+    if ($request->hasFile('image_product')) {
+        $image = $request->file('image_product');
+        $filename = time() . '.' . $image->getClientOriginalExtension();
+        $image->move(public_path('image/products'), $filename);
+        $validatedData['image_product'] = $filename;
     }
+
+    // Crear producto
+    Producto::create($validatedData);
+
+    return redirect()
+        ->route('productos.index')
+        ->with('status', 'Producto registrado correctamente.');
+}
+
+
+
 
     public function edit(Producto $producto)
     {
@@ -51,6 +77,11 @@ class ProductoController extends Controller
 
     public function destroy(Producto $producto)
     {
+        // Eliminar imagen si existe
+        if ($producto->image_product && file_exists(public_path('image/products/' . $producto->image_product))) {
+            unlink(public_path('image/products/' . $producto->image_product));
+        }
+
         $producto->delete();
         return redirect()->route('productos.index')->with('success', 'Producto eliminado correctamente.');
     }

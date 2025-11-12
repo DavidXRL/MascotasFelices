@@ -1,104 +1,105 @@
 @vite('resources/css/app.css')
 
-<body class="bg-green-50 text-gray-900">
+<body class=" text-gray-900">
 
 @include('layout.main_template')
 
-<main class="mx-auto mt-10 p-6 md:p-20 bg-white rounded-2xl shadow-xl w-[97%]">
+<main class="mx-auto bg-white p-10">
 
 
-<h1 class="text-2xl md:text-3xl font-bold mb-6">Política de Privacidad – Escuela Telesecundaria Justo Sierra (Portal JS)</h1>
+<h1 class="text-2xl md:text-3xl font-bold mb-6">Política de Privacidad – Mascotas Felices (Tienda Online)</h1>
 
 <section class="mb-8">
-    <h2 class="text-xl font-semibold mb-2">1. Introducción</h2>
+    <h2 class="text-xl font-semibold mb-2">1. Introducción y Aplicación</h2>
     <p>
-        En la Escuela Telesecundaria Justo Sierra reconocemos la importancia de proteger la privacidad y los datos personales. Esta política aplica al portal Portal JS <a href="https://portaljs-production.up.railway.app" class="text-green-700 underline">https://portaljs-production.up.railway.app</a>.
+        En <strong>Mascotas Felices</strong>, operada por Ángel de Gabriel, José David y Deyanira, reconocemos la importancia de tu privacidad y la de tus datos personales. Esta política detalla cómo recopilamos, utilizamos y protegemos la información de nuestros usuarios en nuestro sitio web <a href="https://mascotasfelices.com" class="text-gray-700 underline">https://mascotasfelices.com</a>.
         <br>
-        El portal es de carácter informativo para la comunidad escolar. Los visitantes pueden consultar contenidos sin necesidad de registrarse ni proporcionar datos personales. Únicamente los administradores autorizados cuentan con cuentas de acceso para gestionar el sitio.
+        Esta política aplica a todos los usuarios que navegan, se registran, realizan compras o se suscriben a nuestro newsletter Al utilizar nuestro sitio, aceptas las prácticas descritas en esta política.
     </p>
 </section>
 
 <section class="mb-8">
-    <h2 class="text-xl font-semibold mb-2">2. Principios de Seguridad y Privacidad</h2>
+    <h2 class="text-xl font-semibold mb-2">2. Principios de Seguridad de Datos</h2>
     <ul class="list-disc pl-6 space-y-2">
-        <li><strong>2.1 Accesibilidad:</strong> La presente política se encuentra disponible de manera permanente en el portal, de modo que pueda consultarse en todo momento.</li>
-        <li><strong>2.2 Confidencialidad:</strong> La información de las cuentas administrativas se utiliza exclusivamente para la gestión del portal y no se comparte con terceros, salvo obligación legal.</li>
-        <li><strong>2.3 Disponibilidad:</strong> Se aplican medidas técnicas y organizativas para mantener la disponibilidad y correcto funcionamiento del portal, asegurando que la información institucional esté accesible a la comunidad escolar.</li>
-        <li><strong>2.4 Autenticación:</strong> El acceso al área administrativa está protegido mediante credenciales personales (correo y contraseña). Las contraseñas se almacenan cifradas y nunca en texto plano.</li>
-        <li><strong>2.5 Integridad:</strong> Los datos de los administradores se tratan de forma que se preserve su exactitud y actualización. El sistema protege contra modificaciones o pérdidas no autorizadas.</li>
-        <li><strong>2.6 Control de acceso:</strong> Solo el personal autorizado de la Escuela tiene cuentas administrativas con acceso restringido a la gestión de contenidos. Los visitantes no requieren cuentas ni contraseñas.</li>
+        <li><strong>2.1 Confidencialidad:</strong> Tus datos de compra y cuenta se utilizan exclusivamente para procesar pedidos, mejorar el servicio y no se comparten con terceros, salvo para la logística del envío o mandato legal.</li>
+        <li><strong>2.2 Integridad:</strong> Nos aseguramos de que la información recopilada (direcciones, pedidos) sea precisa y se mantenga actualizada, utilizando sistemas protegidos contra modificaciones no autorizadas.</li>
+        <li><strong>2.3 Disponibilidad:</strong> Implementamos medidas técnicas para mantener la disponibilidad de la tienda, asegurando que puedas acceder a tu cuenta y realizar compras de manera fluida.</li>
+        <li><strong>2.4 Cifrado:</strong> Utilizamos tecnología de cifrado SSL/TLS en todas las transacciones y protegemos las contraseñas de las cuentas de usuario mediante cifrado robusto.</li>
+        <li><strong>2.5 Mínima Recopilación:</strong> Solo solicitamos la información estrictamente necesaria para completar tu pedido, realizar el envío o gestionar tu suscripción.</li>
     </ul>
 </section>
 
 <section class="mb-8">
     <h2 class="text-xl font-semibold mb-2">3. Información que recopilamos</h2>
     <ul class="list-disc pl-6 space-y-2">
-        <li><strong>Visitantes:</strong> No recopilamos datos personales de los usuarios que simplemente navegan en el portal.</li>
-        <li><strong>Administradores:</strong> Para habilitar el acceso administrativo, se recopila la siguiente información:
+        <li><strong>Datos de Compra y Registro:</strong> Recopilamos la siguiente información personal al registrarte o realizar un pedido:
             <ul class="list-disc pl-6">
+                <li>Nombre completo.</li>
                 <li>Correo electrónico.</li>
+                <li>Dirección de envío y facturación.</li>
+                <li>Número de teléfono (para coordinación de entrega).</li>
                 <li>Contraseña (almacenada de forma cifrada).</li>
-                <li>Nombre o identificador institucional (cuando sea requerido).</li>
             </ul>
         </li>
+        <li><strong>Datos de Navegación (Cookies):</strong> Utilizamos cookies técnicas (necesarias para el carrito de compras y la sesión de usuario) y cookies de analítica (para entender cómo interactúas con la tienda y mejorar la experiencia).</li>
+        <li><strong>Datos de Pago:</strong> Procesamos los pagos a través de plataformas de terceros (como PayPal o bancos). Mascotas Felices nunca almacena información sensible de tarjetas de crédito o débito.</li>
     </ul>
-    <p class="mt-2">El portal utiliza únicamente una cookie de sesión técnica para mantener la sesión activa de los administradores, sin emplear cookies de rastreo ni sistemas de analítica.</p>
 </section>
 
 <section class="mb-8">
     <h2 class="text-xl font-semibold mb-2">4. Uso de la información</h2>
     <ul class="list-disc pl-6 space-y-2">
-        <li>Gestionar y autenticar cuentas de administradores.</li>
-        <li>Proteger la seguridad del portal.</li>
-        <li>Mantener actualizado el contenido informativo para la comunidad escolar.</li>
+        <li>Procesar, confirmar y enviar tus pedidos de productos.</li>
+        <li>Gestionar y autenticar tu cuenta de usuario.</li>
+        <li>Enviar comunicaciones sobre el estado de tu pedido, ofertas y el newsletter (si te has suscrito).</li>
+        <li>Mejorar nuestros productos y la experiencia de usuario de la tienda online.</li>
+        <li>Cumplir con nuestras obligaciones legales y fiscales.</li>
     </ul>
 </section>
 
 <section class="mb-8">
-    <h2 class="text-xl font-semibold mb-2">5. Confidencialidad y seguridad</h2>
+    <h2 class="text-xl font-semibold mb-2">5. Compartición de información</h2>
     <ul class="list-disc pl-6 space-y-2">
-        <li>Los datos de administradores no se divulgarán sin autorización, salvo por mandato legal.</li>
-        <li>Se emplean conexiones seguras (HTTPS) y cifrado de contraseñas.</li>
-        <li>El acceso a la base de datos y funciones administrativas está restringido únicamente a personal autorizado.</li>
+        <li>Empresas de Logística: Compartimos tu nombre, dirección y teléfono con las empresas de mensajería (ej. DHL, FedEx) para que puedan entregarte tu pedido.</li>
+        <li>Proveedores de Servicios: Compartimos datos con proveedores que nos ayudan con la plataforma de la tienda, el procesamiento de pagos o la analítica web.</li>
+        <li>Requerimiento Legal: Divulgaremos información solo si es requerido por ley o por una orden judicial.</li>
     </ul>
 </section>
 
 <section class="mb-8">
-    <h2 class="text-xl font-semibold mb-2">6. Derechos de los titulares</h2>
+    <h2 class="text-xl font-semibold mb-2">6. Derechos del usuario (Derechos ARCO)</h2>
     <p>
-        Los administradores titulares de cuentas podrán ejercer sus derechos de acceso, rectificación, cancelación u oposición (ARCO) respecto a sus datos en cualquier momento, comunicándose a: 
-        <a href="mailto:30dtv0296r@secundaria.msev.gob.mx" class="text-green-700 underline">30dtv0296r@secundaria.msev.gob.mx</a>
+        Como titular de los datos, puedes ejercer tus derechos de acceso, rectificación, cancelación u oposición (ARCO) respecto a tus datos personales. Puedes gestionar gran parte de tu información directamente desde la configuración de tu cuenta.
+        Para cualquier solicitud o consulta formal, por favor comunícate con nosotros a la dirección de correo electrónico proporcionada en la sección de Contacto.
     </p>
 </section>
 
 <section class="mb-8">
     <h2 class="text-xl font-semibold mb-2">7. Menores de edad</h2>
     <p>
-        El portal está diseñado con fines informativos y no recopila datos de menores. La navegación es libre sin necesidad de registro.
+        Nuestra tienda online está dirigida a adultos. Si eres menor de 18 años, por favor realiza tus compras bajo la supervisión de un adulto o tutor legal. No recopilamos intencionalmente datos de menores de edad.
     </p>
 </section>
 
 <section class="mb-8">
     <h2 class="text-xl font-semibold mb-2">8. Cambios a esta política</h2>
     <p>
-        La Escuela podrá actualizar esta Política de Privacidad cuando lo considere necesario, ya sea por disposiciones legales o cambios en el portal. Las versiones actualizadas estarán siempre disponibles en el sitio.
+        Mascotas Felices se reserva el derecho de actualizar esta Política de Privacidad. Te notificaremos sobre cambios significativos a través de un aviso en la página principal o por correo electrónico. La versión más reciente estará siempre disponible en el sitio.
     </p>
 </section>
 
 <section class="mb-8">
     <h2 class="text-xl font-semibold mb-2">9. Contacto</h2>
     <ul class="list-disc pl-6">
-        <li><strong>Correo electrónico:</strong> <a href="mailto:30dtv0296r@secundaria.msev.gob.mx" class="text-green-700 underline">30dtv0296r@secundaria.msev.gob.mx</a></li>
-        <li><strong>Dirección:</strong> Calle de la Juventud S/N, Colonia Hidalgo, Gutiérrez Zamora, Veracruz, México</li>
+        <li><strong>Correo electrónico:</strong> <a href="mailto:mascotasfelices@gmail.com" class="text-gray-700 underline">mascotasfelices@gmail.com</a></li>
+        <li><strong>Dirección:</strong> Vicente Guerrero, Lomas de Plata, 93429 Papantla de Olarte, Ver.</li>
     </ul>
 </section>
 
 
-
-
 <div class="flex justify-center my-8">
-    <a href="https://drive.google.com/uc?export=download&id=11_OenevXNpqxYLU3AZLoKiSYQaaO7aA5"
-       class="inline-flex items-center px-6 py-3 bg-green-700 text-white font-semibold rounded-lg shadow-lg hover:bg-green-800 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2">
+    <a href="/descargar-politica-pdf"
+       class="inline-flex items-center px-6 py-3 bg-gray-700 text-white font-semibold rounded-lg shadow-lg hover:bg-gray-800 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2">
         <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m0 0l-6-6m6 6l6-6"/>
         </svg>

@@ -82,9 +82,12 @@
                     <h2 class="text-xl font-bold mb-2 text-gray text-center truncate" title="{{ $producto->nombre }}">
                         {{ $producto->nombre }}
                     </h2>
-                    <p class="text-gray-700 text-center mb-4 whitespace-normal break-words line-clamp-3">
-                        Categoría: <span class="font-semibold text-gray">{{ $producto->categoria }}</span>
+                    <p class="text-gray-700 mb-4 line-clamp-3 text-center" title="{{ $producto->descripcion }}">
+                        {{ $producto->descripcion }}
                     </p>
+                       <p class=" text-gray-700 mb-2 text-center">
+                    Categoría: {{ $producto->categoria ? $producto->categoria->categoria_nombre : 'Sin categoría' }}
+                </p>
                     <div class="flex flex-col items-center justify-center mt-auto gap-2">
                         <span class="inline-flex items-center gap-1 text-sm text-gray-700 bg-gray-100 px-3 py-1 rounded-full shadow-sm">
                             💰 Precio: <strong>${{ number_format($producto->precio, 2) }}</strong>

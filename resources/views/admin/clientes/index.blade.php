@@ -1,9 +1,9 @@
 <x-app-layout>
-<div class="container mx-auto p-6">
+<div class="container mx-auto p-6 text-center">
     <h1 class="text-3xl font-bold mb-4">Clientes</h1>
 
     {{-- Botón para agregar nuevo cliente --}}
-    <a href="{{ route('clientes.create') }}" class="bg-blue-500 text-white px-4 py-2 rounded">
+    <a href="{{ route('clientes.create') }}" class="bg-green-500 text-white px-4 py-2 rounded">
         Nuevo Cliente
     </a>
 

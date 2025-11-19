@@ -5,4 +5,8 @@
 <input type="text" name="nombre" value="{{ $cliente->nombre }}" class="border px-3 py-2 w-full">
 <input type="email" name="email" value="{{ $cliente->email }}" class="border px-3 py-2 w-full">
 <input type="text" name="telefono" value="{{ $cliente->telefono }}" class="border px-3 py-2 w-full">
+
+<div class="flex justify-center">
+    <button type="submit" class="bg-green-500 text-white px-4 py-2 rounded">Actualizar</button>
+</div>
 </x-app-layout>

@@ -10,6 +10,7 @@ use App\Http\Controllers\VentaController;
 use App\Http\Controllers\ReporteController;
 use App\Http\Controllers\CategoriaController;
 
+
 // Página de inicio pública
 Route::get('/', [ProductoController::class, 'welcome'])->name('welcome');
 
@@ -50,5 +51,8 @@ Route::middleware(['auth'])->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+Route::get('reportes/inventario', [ReporteController::class, 'inventario'])->name('reportes.inventario');
+Route::get('reportes/rendimiento', [ReporteController::class, 'rendimiento'])->name('reportes.rendimiento');
 
 require __DIR__.'/auth.php';

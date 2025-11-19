@@ -1,7 +1,7 @@
 <x-app-layout>
 
 
-    <div class="container mx-auto p-6">
+    <div class="container mx-auto p-6 text-center">
         <h1 class="text-2xl font-bold mb-4">Pedidos</h1>
 
         <a href="{{ route('pedidos.create') }}" class="bg-green-500 text-white px-4 py-2 rounded mb-4 inline-block">
